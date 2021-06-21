@@ -1,0 +1,27 @@
+body::before{
+	content: '';
+	display: block;
+	height: 60px;
+}
+.grid{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 40px;
+}
+iframe {
+	width: 100%;
+	height: 50vh;
+	border-radius: 10px;
+}
+
+@media (max-width: 748px){
+.contact .grid {
+   	 grid-template-columns: 1fr;  
+   	 grid-template-rows: 1fr; 
+}
+
+@media(min-width: 768px){
+	.news-input{
+      width: 50%;
+ }
+}
